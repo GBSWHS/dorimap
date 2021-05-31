@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>다음 지도 API</title>
+</head>
+<body>
+	<div id="map" style="width:2000px;height:1500px;"></div>
+
+	<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e77f2daf4503f825c5f8fcbc756d2145"></script>
+	<script>
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		    mapOption = {
+		        center: new kakao.maps.LatLng(36.3029, 128.58507), // 지도의 중심좌표
+		        level: 3, // 지도의 확대 레벨
+		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		    }; 
+
+		// 지도를 생성한다 
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+		// 마커 이미지의 주소
+		var markerImageUrl = 'https://w.namu.la/s/60c5bf95b3a40e2d09389e4c5ad3688273125b5e62a6d5384ee26a3b9dd97bc9cbbb66a52771bc62b8840faaf1c713b6dba4af93345fa73f80cf21694de86a0edff4aea2a01b7f93ba36722d4a5c3b0557f8677b5552d9dce5a75ade8e39279e', 
+		    markerImageSize = new kakao.maps.Size(50, 50), // 마커 이미지의 크기
+		    markerImageOptions = { 
+		        offset : new kakao.maps.Point(20, 70)// 마커 좌표에 일치시킬 이미지 안의 좌표
+		    };
+
+		// 마커 이미지를 생성한다
+		var markerImage = new kakao.maps.MarkerImage(markerImageUrl, markerImageSize, markerImageOptions);
+
+		// 지도에 마커를 생성하고 표시한다
+		var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(36.3029, 128.58507), // 마커의 좌표
+		    image : markerImage, // 마커의 이미지
+		    map: map // 마커를 표시할 지도 객체
+		});
+
+	</script>
+</body>
+</html>

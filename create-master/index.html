@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DoriMap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <div class="border-bottom top-bar py-2 bg-dark" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              <span class="mr-3"><strong class="text-white">교무실:</strong> <a href="tel://#">054-832-2903</a></span>
+              <span><strong class="text-white">이메일:</strong> <a href="#">gbsw01@sc.gyo6.net</a></span>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="social-media">
+              <li><a
+                  href="https://www.facebook.com/%EA%B2%BD%EB%B6%81%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90-110719997376205/"
+                  class="p-2"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.instagram.com/gbswhs/" class="p-2"><span class="icon-instagram"></span></a></li>
+              <li><a href="https://github.com/GBSWHS" class="p-2"><span class="icon-github"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">DoriMap<span
+                  class="text-primary">.</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">홈</a></li>
+                <li><a href="map.html" class="nav-link">길찾기</a></li>
+                <li>
+                  <a href="..\around_building.html" class="nav-link">인근시설</a>
+                </li>
+                
+                <li><a href="#blog-section" class="nav-link">학교</a></li>
+                <li><a href="#contact-section" class="nav-link">오류제보</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+
+
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/test3.jpeg);" data-aos="fade"
+      data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="row justify-content-center mb-4">
+              <div class="col-md-8 text-center">
+                <h1>GyeongBukSoftWare High-School <span class="typed-words"></span></h1>
+                <p class="lead mb-5">도리맵 <a href="#" target="_blank">프로젝트</a></p>
+                <div><a href="http://school.gyo6.net/gbsw" class="btn btn-primary btn-md">학교 홈페이지 바로가기</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <section class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 box-with-humber">
+              <div class="number-behind">01.</div>
+              <h2 class="text-primary">집가는방법(길찾기)</h2>
+              <p class="mb-4">집까지 가는방법을
+                최저시간및 최저비용을 추천해드리며
+                여러가지 경로를 비교해드립니다</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>최저비용</li>
+                <li>최단경로</li>
+                <li>경로 및 이동수단비교</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 box-with-humber">
+              <div class="number-behind">02.</div>
+              <h2 class="text-primary">음식점</h2>
+              <p class="mb-4">학교 주변 도리원내 음식점을 나타냅니다.</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>음식점</li>
+                <li>카페</li>
+                <li>도리원</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="p-3 box-with-humber">
+              <div class="number-behind">03.</div>
+              <h2 class="text-primary">긴급/여가시설</h2>
+              <p class="mb-4">도리원내 긴급시설과 여가시설을 나타냅니다.</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>긴급시설</li>
+                <li>여가시설</li>
+                <li>편의시설</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section" id="work-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-black h1 site-section-heading text-center">학교사진</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a href="images/img_1.jpeg" class="media-1" data-fancybox="gallery">
+              <img src="images/img_1.jpeg" alt="Image" class="img-fluid">
+              <div class="media-1-content">
+                <h2>기숙사</h2>
+                <span class="category">정심관</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="images/img_2.jpg" class="media-1" data-fancybox="gallery">
+              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              <div class="media-1-content">
+                <h2>학교전교생</h2>
+                <span class="category">단체사진</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="images/img_3.jpeg" class="media-1" data-fancybox="gallery">
+              <img src="images/img_3.jpeg" alt="Image" class="img-fluid">
+              <div class="media-1-content">
+                <h2>코딩관</h2>
+                <span class="category">전경</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="images/img_4.jpeg" class="media-1" data-fancybox="gallery">
+              <img src="images/img_4.jpeg" alt="Image" class="img-fluid">
+              <div class="media-1-content">
+                <h2>학교 전체</h2>
+                <span class="category">항공사진</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="images/img_5.jpeg" class="media-1" data-fancybox="gallery">
+              <img src="images/img_5.jpeg" alt="Image" class="img-fluid">
+              <div class="media-1-content">
+                <h2>학교 전체</h2>
+                <span class="category">항공 사진</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="images/img_6.jpg" class="media-1" data-fancybox="gallery" width="5000" height="5000" />
+            <img src="images/img_6.jpg" alt="Image" class="img-fluid" width="5000" height="5000" />
+            <div class="media-1-content">
+              <h2>학교 전경</h2>
+              <span class="category">야간사진</span>
+            </div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section ft-feature-1">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-12 bg-black w-100 ft-feature-1-content">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+
+                <img src="images/about_1.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
+
+              </div>
+              <div class="col-lg-3 ml-auto">
+                <div class="mb-5">
+                  <h3 class="d-flex align-items-center"><span class="icon icon-beach_access mr-2"></span><span>기획</span>
+                  </h3>
+                  <p>2반 친구들이 학급회의를 통해 주제를 선정하였습니다</p>
+                  <p><a href="#">Read More</a></p>
+                </div>
+
+                <div>
+                  <h3 class="d-flex align-items-center"><span class="icon icon-build mr-2"></span><span>개발</span></h3>
+                  <p>html,javascript,오픈소스를 이용하여 개발</p>
+                  <p><a href="#">Read More</a></p>
+                </div>
+
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-5">
+                  <h3 class="d-flex align-items-center"><span class="icon icon-format_paint mr-2"></span><span>웹
+                      디자인</span></h3>
+                  <p>css와 scss 및 Adobe Xd를 사용한 XI/XD</p>
+                  <p><a href="#">Read More</a></p>
+                </div>
+
+                <div>
+                  <h3 class="d-flex align-items-center"><span
+                      class="icon icon-question_answer mr-2"></span><span>피드백</span></h3>
+                  <p>2반친구들이 모두 사용해보고 오류와 부족한점을 피드백하였습니다.</p>
+                  <p><a href="#">Read More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="site-section testimonial-wrap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-black h1 site-section-heading text-center">피드백</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;UI가 개편되면 좋을껏같아요!&rdquo;</p>
+            </blockquote>
+
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/tktk.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>최태혁</p>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;앱으로 출시되면 좋을껏같아요!.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/pmh.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>박민혁</p>
+            </figure>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;오류제보하는곳을 만들어주세요!&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/jam.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>김창환</p>
+            </figure>
+
+
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;건의사항란을 만들어주세요!&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_5.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>박대형</p>
+            </figure>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+
+          <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
+            <img src="images/about_1.jpg" alt="Image" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 order-md-1" data-aos="fade">
+
+            <div class="row">
+
+              <div class="col-12">
+                <div class="text-left pb-1">
+                  <h2 class="text-black h1 site-section-heading">최종 결과</h2>
+                </div>
+              </div>
+              <div class="col-12 mb-4">
+                <p class="lead">저희는 피드백을 통해 추후 도리맵을 앱(안드로이드,ios)로 출시및 커뮤니티형식으로 대화시스템도 도입하기로했습니다</p>
+              </div>
+              <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
+                <div class="unit-4">
+                  <div class="unit-4-icon mr-4 mb-3"><span class="text-secondary icon-phonelink"></span></div>
+                  <div>
+                    <h3>Web &amp; Android,ios</h3>
+                    <p>Android Studio와 Swift,Xcode를 이용해 앱버전으로 추후 출시될 예정입니다.</p>
+                    <p class="mb-0"><a href="#">도리맵</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
+                <div class="unit-4">
+                  <div class="unit-4-icon mr-4 mb-3"><span class="text-secondary icon-extension"></span></div>
+                  <div>
+                    <h3>Community</h3>
+                    <p>대화식으로 질문대답이 가능하게 구현될 예정입니다.</p>
+                    <p class="mb-0"><a href="#">도리맵</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section border-bottom" id="team-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center">
+            <h2 class="text-black h1 site-section-heading">프로젝트 기여자</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="person text-center">
+              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>변예준</h3>
+              <p class="position text-muted">1-2반Sw개발과</p>
+              <p class="mb-4">메인페이지 전체 디자인담당(CSS,UI/UX)</p>
+              <ul class="ul-social-circle">
+                <li><a href="https://github.com/yejun178"><span class="icon-github"></an></a></li>
+                <li><a href="https://www.instagram.com/invites/contact/?i=55kxf2dk7r39&utm_content=35hm95y  "><span
+                      class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="person text-center">
+              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>최홍찬</h3>
+              <p class="position text-muted">1-2반Sw개발과</p>
+              <p class="mb-4">서브페이지및 디자인, 프로젝트 보고서 작성</p>
+              <ul class="ul-social-circle">
+                <li><a href="https://github.com/Sichu0725"><span class="icon-github"></an></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <div class="person text-center">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>임동주</h3>
+              <p class="position text-muted">1-2반Sw개발과</p>
+              <p class="mb-4">길찾기 서비스 및 API담당</p>
+              <ul class="ul-social-circle">
+                <li><a href="https://github.com/l050101"><span class="icon-github"></an></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <section class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="text-black h1 site-section-heading">오류제보</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+
+
+
+            <form action="#" class="p-5 bg-white">
+
+              <h2 class="h4 text-black mb-5">오류제보</h2>
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">이름</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">반/번호</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-black" for="email">이메일</label>
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">건의사항</label>
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">오류사항</label>
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"
+                    placeholder="어떠한 오류가있는지 자세히 제출해주세요.(추후 데이터베이스 연동후 Node.js를 이용하여 구현예정)"></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="제출하기" class="btn btn-primary btn-md text-white">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="col-md-5">
+
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold">주소</p>
+              <p class="mb-4">경상북도 의성군 봉양면 봉호로 14</p>
+
+              <p class="mb-0 font-weight-bold">교무실</p>
+              <p class="mb-4"><a href="#">054-832-2903</a></p>
+
+              <p class="mb-0 font-weight-bold">이메일</p>
+              <p class="mb-0"><a href="#">gbsw01@sc.gy06.net</a></p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="bg-primary py-5 d-block">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md10">
+            <h2 class="text-white">메인페이지</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">DoriMap</h2>
+                <p>학기 초에 진행된 아이디어 뱅크 학급을 찾아라의 아이디어에서 시작된 이 프로젝트는 학교의 주변 지리를 잘 모르는 그리고 집 가는 방법을 확실하게 알지 못하는 신입생들을 도우자는
+                  취지에서 제작되었습니다.</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">그 외 기여자</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">최민(자료수집)</a></li>
+         
+                </ul>
+              </div>
+           
+          <div class="col-md-3">
+          
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright&copy; 1-2반 2021-05-31. All rights reserved.
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  <script src="js/typed.js"></script>
+  <script>
+    var typed = new Typed('.typed-words', {
+      strings: ["Student", "Community", "Web Service"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+  </script>
+
+  <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

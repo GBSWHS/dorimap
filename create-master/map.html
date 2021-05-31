@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sljslkjaajkds</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="create-master\fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="..\map.css">
+    
+</head>
+<body>
+	<div id="container">
+		<div id="hedaer" data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="width: 1900px;">
+  
+				<div class="site-wrap" style="margin: left 0px;">
+
+				  <div class="site-mobile-menu site-navbar-target">
+					<div class="site-mobile-menu-header">
+					  <div class="site-mobile-menu-close mt-3">
+						<span class="icon-close2 js-menu-toggle"></span>
+					  </div>
+					</div>
+					<div class="site-mobile-menu-body"></div>
+				  </div>
+				 
+				  <div class="border-bottom top-bar py-2 bg-dark" id="home-section">
+					<div class="container">
+					  <div class="row">
+						<div class="col-md-6">
+						  <p class="mb-0">
+							<span class="mr-3"><strong class="text-white">교무실:</strong> <a href="tel://#">054-832-2903</a></span>
+							<span><strong class="text-white">이메일:</strong> <a href="#">gbsw01@sc.gyo6.net</a></span>
+						  </p>
+						</div>
+						<div class="col-md-6">
+						  <ul class="social-media">
+							<li><a href="https://www.facebook.com/%EA%B2%BD%EB%B6%81%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90-110719997376205/" class="p-2"><span class="icon-facebook"></span></a></li>
+							<li><a href="https://www.instagram.com/gbswhs/" class="p-2"><span class="icon-instagram"></span></a></li>
+							<li><a href="https://github.com/GBSWHS" class="p-2"><span class="icon-github"></span></a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div> 
+				  </div>
+				  <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
+			  
+					<div class="container" style="margin-left: 0px;">
+					  <div class="row align-items-center" style="margin-left: 0px;">
+						
+						<div class="col-11 col-xl-2">
+						  <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">DoriMap<span class="text-primary">.</span> </a></h1>
+						</div>
+						<div class="col-12 col-md-10 d-none d-xl-block">
+						  <nav class="site-navigation position-relative text-right" role="navigation">
+			  
+							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+							  <li><a href="index.html" class="nav-link">홈</a></li>
+							  <li><a href="map.html" class="nav-link">길찾기</a></li>
+							  <li>
+								<a href="..\around_building.html" class="nav-link">인근시설</a>
+							  </li>
+							  <li><a href="#blog-section" class="nav-link">학교</a></li>
+							  <li><a href="#contact-section" class="nav-link">오류제보</a></li>
+							</ul>
+						  </nav>
+						</div> 
+		</div>
+		<div id="left-side" style="margin-left: -15px; width: 500px; padding: 5px; margin-top: 1px; background-color: rgba(151,220,246,1);"> 
+			<div class="dorimap_logo">
+				<img src="..\시추먹이(개껌,사료등)\시추먹이\hambuger_icon(2).png" width="30px" alt="ㄴㅁㄹㅇ" id=hambuger_icon>
+				<img src="..\시추먹이(개껌,사료등)\시추먹이\다른이름-removebg-preview.png" style="margin-left: -30px;" alt="도리맵 로고" width="100px" id="dorimap_logo">
+			</div>
+			<div class="serch">
+				<form onsubmit="return false">
+					<input style="border: none; border-radius: 100px; padding: 5px;" id = "serch" type="text">
+					<input onclick="window.location.replace('map2.html')" id = "gaza" type="submit" value="검색">
+				</form>
+			</div>
+		</div>
+		<div id="section">
+			<div id="map" style="width:2000px;height:1500px;"></div>
+
+	<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e77f2daf4503f825c5f8fcbc756d2145"></script>
+	<script>
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		    mapOption = {
+		        center: new kakao.maps.LatLng(36.3029, 128.58507), // 지도의 중심좌표
+		        level: 3, // 지도의 확대 레벨
+		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		    }; 
+
+		// 지도를 생성한다 
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+		// 마커 이미지의 주소
+		var markerImageUrl = 'https://w.namu.la/s/60c5bf95b3a40e2d09389e4c5ad3688273125b5e62a6d5384ee26a3b9dd97bc9cbbb66a52771bc62b8840faaf1c713b6dba4af93345fa73f80cf21694de86a0edff4aea2a01b7f93ba36722d4a5c3b0557f8677b5552d9dce5a75ade8e39279e', 
+		    markerImageSize = new kakao.maps.Size(50, 50), // 마커 이미지의 크기
+		    markerImageOptions = { 
+		        offset : new kakao.maps.Point(20, 70)// 마커 좌표에 일치시킬 이미지 안의 좌표
+		    };
+
+		// 마커 이미지를 생성한다
+		var markerImage = new kakao.maps.MarkerImage(markerImageUrl, markerImageSize, markerImageOptions);
+
+		// 지도에 마커를 생성하고 표시한다
+		var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(36.3029, 128.58507), // 마커의 좌표
+		    image : markerImage, // 마커의 이미지
+		    map: map // 마커를 표시할 지도 객체
+		});
+
+	</script>
+		
+		<div id="footer">
+			<p style="margin-top: 15px;"> Copyright&copy; 1-2반 2021-05-XX. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

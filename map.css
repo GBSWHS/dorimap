@@ -1,0 +1,64 @@
+
+#container {
+    margin: 0px;
+    padding: 0px 0px;
+    width: 1800px;
+    height: auto;
+    text-align: center;
+}
+#container > h2 {
+    margin: 0px 0px;
+}
+
+#left-side {
+    margin-left: 140px;
+    width: 490px;
+    height: 70%;
+    margin: 0px;
+    float: left;
+}
+#section {
+    position: absolute;
+    left: 500px;
+    width: 70%;
+    height: 80%;
+    margin: 0px;
+    float: left;
+}
+#footer {
+    position: absolute;
+    bottom: 600px;
+    height: 90px;
+    width: 1900px;
+    clear: left;
+    background-color: #4d4d4d;
+    color: #737373;
+}
+
+#hambuger_icon {
+    float: left;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+#dorimap_logo {
+    clear: left;
+    margin-left: 5px;
+    text-align: left;
+}
+.serch {
+    padding: 0px;
+}
+#serch {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 80%;
+
+}
+#gaza {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-left: 0px;
+    padding: 0px;
+}
