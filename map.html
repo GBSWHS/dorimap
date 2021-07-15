@@ -7,7 +7,7 @@
 	<title>sljslkjaajkds</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="create-master\fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="..\map.css">
+	<link rel="stylesheet" href="./map.css">
     
 </head>
 <body>
@@ -76,7 +76,7 @@
 							  <li><a href="index.html" class="nav-link">홈</a></li>
 							  <li><a href="map.html" class="nav-link">길찾기</a></li>
 							  <li>
-								<a href="..\around_building.html" class="nav-link">인근시설</a>
+								<a href="./around_building.html" class="nav-link">인근시설</a>
 							  </li>
 							  <li><a href="#blog-section" class="nav-link">학교</a></li>
 							  <li><a href="#contact-section" class="nav-link">오류제보</a></li>
@@ -84,22 +84,22 @@
 						  </nav>
 						</div> 
 		</div>
-		<div id="left-side" style="margin-left: -15px; width: 500px; padding: 5px; margin-top: 1px; background-color: rgba(151,220,246,1);"> 
-			<div class="dorimap_logo">
-				<img src="..\시추먹이(개껌,사료등)\시추먹이\hambuger_icon(2).png" width="30px" alt="ㄴㅁㄹㅇ" id=hambuger_icon>
-				<img src="..\시추먹이(개껌,사료등)\시추먹이\다른이름-removebg-preview.png" style="margin-left: -30px;" alt="도리맵 로고" width="100px" id="dorimap_logo">
+
+
 			</div>
 			<div class="serch">
 				<form onsubmit="return false">
 					<input style="border: none; border-radius: 100px; padding: 5px;" id = "serch" type="text">
-					<input onclick="window.location.replace('map2.html')" id = "gaza" type="submit" value="검색">
+					<!-- <input onclick="window.location.replace('map2.html')" id = "gaza" type="submit" value="검색"> -->
 				</form>
 			</div>
 		</div>
 		<div id="section">
-			<div id="map" style="width:2000px;height:1500px;"></div>
-
-	<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e77f2daf4503f825c5f8fcbc756d2145"></script>
+		<div id="minhyeok">
+	<img src="./images//map.png">
+			</div>
+		
+			<!-- <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e77f2daf4503f825c5f8fcbc756d2145"></script> -->
 	<script>
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		    mapOption = {
@@ -111,7 +111,7 @@
 		// 지도를 생성한다 
 		var map = new kakao.maps.Map(mapContainer, mapOption); 
 		// 마커 이미지의 주소
-		var markerImageUrl = 'https://w.namu.la/s/60c5bf95b3a40e2d09389e4c5ad3688273125b5e62a6d5384ee26a3b9dd97bc9cbbb66a52771bc62b8840faaf1c713b6dba4af93345fa73f80cf21694de86a0edff4aea2a01b7f93ba36722d4a5c3b0557f8677b5552d9dce5a75ade8e39279e', 
+		var markerImageUrl = '/images/symbol-only.png', 
 		    markerImageSize = new kakao.maps.Size(50, 50), // 마커 이미지의 크기
 		    markerImageOptions = { 
 		        offset : new kakao.maps.Point(20, 70)// 마커 좌표에 일치시킬 이미지 안의 좌표
@@ -129,9 +129,7 @@
 
 	</script>
 		
-		<div id="footer">
-			<p style="margin-top: 15px;"> Copyright&copy; 1-2반 2021-05-XX. All rights reserved.</p>
-		</div>
+	
 	</div>
 </body>
 </html>
